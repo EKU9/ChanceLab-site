@@ -1,11 +1,20 @@
 (() => {
     'use strict';
     const dbName = 'ChanceLab';
+    // 빈 영역이나 다른 조작을 탭하면 펼친 데이터 메뉴를 닫는다.
+    document.addEventListener('pointerdown', event => {
+        document.querySelectorAll('details.utility-menu[open]').forEach(menu => {
+            if (!menu.contains(event.target)) menu.open = false;
+        });
+    });
     // 모달 밖의 탭·초기화 버튼으로 키보드 초점이 빠져나가지 않도록 한다.
     document.addEventListener('keydown', event => {
         const dialogs = document.querySelectorAll('[role="dialog"][aria-modal="true"]');
         const dialog = dialogs[dialogs.length - 1];
-        if (!dialog) return;
+        if (!dialog) {
+            if (event.key === 'Escape') document.querySelectorAll('details.utility-menu[open]').forEach(menu => { menu.open = false; });
+            return;
+        }
         // 비활성화된 실행 취소 버튼에서 초점이 body로 옮겨져도 ESC는 열린 창을 취소한다.
         if (event.key === 'Escape' && !dialog.contains(event.target)) {
             event.preventDefault();
