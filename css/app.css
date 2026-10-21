@@ -41,7 +41,7 @@ svg { display:block; }
 .file-button input { position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:pointer; }
 .file-button:focus-within { outline:3px solid var(--purple); }
 .danger-text { color:#a72c3c; }
-.experiment-tabs { display:grid; grid-template-columns:repeat(5,1fr); padding:5px; gap:5px; border:1px solid var(--line); border-radius:18px; background:#fff; box-shadow:0 4px 14px #1b2b4b04; }
+.experiment-tabs { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); padding:5px; gap:5px; border:1px solid var(--line); border-radius:18px; background:#fff; box-shadow:0 4px 14px #1b2b4b04; }
 .experiment-tab { display:flex; gap:9px; align-items:center; justify-content:center; min-height:48px; padding:6px 10px; background:transparent; border:1px solid transparent; border-radius:13px; font-weight:800; font-size:.9rem; }
 .experiment-tab small { font-size:.58rem; letter-spacing:.07em; font-weight:750; color:var(--muted); }
 .experiment-tab.active { background:#ece8fd; border-color:#c6baee; color:#513492; }
@@ -268,6 +268,69 @@ input:not([type=checkbox]):not([type=file]),select { min-height:44px; border-rad
 @media (max-width:500px) {
     .experiment-stage .coin { width:3.3125rem; height:3.3125rem; }.die { width:3rem; height:3rem; padding:.5rem; gap:.1875rem; }
 }
+/* 비교 화면과 기간 입력은 실험 집계를 바꾸지 않는 표시·실행 계획이다. */
+.experiment-tab > span:not(.tab-icon) { min-width:0; overflow-wrap:anywhere; }
+.tab-icon.comparison { background:#e1f2f3; color:#176976; }
+.run-unit-choice,.lotto-speed { display:flex; align-items:center; gap:7px; color:var(--muted); font-size:.72rem; font-weight:750; min-width:0; }
+.run-unit-choice > span,.lotto-speed > span,.custom-count > span { white-space:nowrap; flex-shrink:0; }
+.lotto-console .custom-count { min-width:88px; }.lotto-console .custom-count input { min-width:44px; }
+.run-unit-choice select,.lotto-speed select { min-height:44px; min-width:88px; max-width:180px; border:1px solid #ccd7e4; border-radius:10px; background:#fff; color:var(--ink); padding:7px 8px; font-size:.75rem; font-weight:750; }
+.lotto-speed select { background:#e9f6f2; border-color:#b2d8cc; color:#145e52; }
+.lotto-run-preview { color:#47566d; font-size:.65rem; line-height:1.4; margin:-2px 0 7px; overflow-wrap:anywhere; }
+.run-input-error { color:#a12d3c; font-size:.75rem; line-height:1.5; margin:3px 0 8px; overflow-wrap:anywhere; }
+.lotto-run-rate { display:flex; flex-wrap:wrap; align-items:center; gap:3px 9px; font-size:.62rem; line-height:1.4; color:#53617a; margin-top:4px; }
+.lotto-run-rate b { color:#344e69; font-weight:750; }.rate-limit { color:#945020; font-size:.62rem; }
+.lotto-console .console-footer { margin-top:5px; gap:3px 9px; }.lotto-console .console-footer .run-state small { display:none; }.lotto-console .lotto-run-rate { margin-top:0; }.lotto-console .count-controls { margin:6px 0; }.lotto-console .lotto-options { margin-top:4px; padding-top:3px; }
+.bar-expected,.bar-value strong,.event-card > strong { overflow-wrap:anywhere; }
+.comparison-intro { display:flex; justify-content:space-between; align-items:center; gap:24px; padding:20px 22px; border:1px solid #d9d2ed; border-radius:19px; background:linear-gradient(110deg,#f7f3ff,#edf7f5); }
+.comparison-intro h2 { margin:5px 0 7px; font-size:1.3rem; }.comparison-intro p { color:#46556e; line-height:1.6; font-size:.86rem; max-width:790px; }
+.comparison-state-note { font-size:.77rem; color:#435775; text-align:right; line-height:1.8; flex-shrink:0; }
+.comparison-toolbar { display:flex; flex-wrap:wrap; align-items:end; gap:12px; padding:17px 0 12px; }
+.comparison-toolbar label { display:flex; flex-direction:column; gap:5px; color:#43536d; font-size:.75rem; font-weight:750; }
+.comparison-toolbar select { min-height:44px; min-width:150px; border:1px solid #c9d4e3; border-radius:10px; background:#fff; color:#233b59; padding:9px 11px; font-size:.84rem; }
+.comparison-count { margin-left:auto; padding:12px 2px; color:#53617a; font-size:.8rem; }
+.comparison-reading-note { font-size:.78rem; line-height:1.7; color:#47566f; padding:0 2px 13px; }
+.comparison-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; list-style:none; margin:0; padding:0; }
+.probability-card { min-width:0; border:1px solid #d9e1eb; border-radius:17px; background:#fff; padding:17px 18px 9px; }
+.probability-card-heading { display:flex; align-items:start; justify-content:space-between; gap:10px; }
+.probability-card-heading h3 { font-size:1rem; margin-top:5px; overflow-wrap:anywhere; }.probability-group { font-size:.63rem; font-weight:800; color:#67518c; }
+.probability-period { font-size:.65rem; line-height:1.5; color:#53617a; margin-top:4px; overflow-wrap:anywhere; }
+.probability-kind { font-size:.64rem; font-weight:750; border:1px solid #b9d8cf; background:#eef8f2; color:#24664f; border-radius:7px; padding:5px 7px; flex-shrink:0; }.probability-kind.approximate { background:#fff4e8; color:#865021; border-color:#e7cba9; }
+.probability-numbers { display:flex; flex-direction:column; gap:13px; margin:16px 0 8px; }
+.probability-percent,.probability-fraction { min-width:0; display:flex; flex-direction:column; gap:5px; }
+.probability-percent strong,.probability-fraction strong { font-family:ui-monospace,"Cascadia Code",Consolas,monospace; overflow-wrap:anywhere; word-break:break-all; }
+.probability-percent strong { font-size:1rem; color:#2b4773; line-height:1.6; }.probability-percent small { color:#59627a; font-size:.67rem; }
+.probability-fraction strong { font-size:.82rem; line-height:1.6; }.probability-fraction > span:last-child { font-size:.72rem; color:#53617a; overflow-wrap:anywhere; }
+.probability-context { border-top:1px solid #e2e7ef; margin-top:13px; }.probability-context summary { display:flex; align-items:center; min-height:44px; cursor:pointer; font-size:.75rem; font-weight:750; color:#5d458c; }
+.probability-context summary::before { content:"＋"; margin-right:6px; }.probability-context[open] summary::before { content:"−"; }
+.probability-context dl { display:grid; gap:8px; padding:2px 0 10px; }.probability-context dl > div { display:grid; grid-template-columns:34px minmax(0,1fr); gap:8px; font-size:.73rem; line-height:1.6; }.probability-context dt { color:#58667a; font-weight:750; }.probability-context dd,.probability-context p { overflow-wrap:anywhere; }
+.probability-context p { padding-bottom:10px; font-size:.73rem; line-height:1.7; color:#53617a; }
+@media (min-width:851px) {
+    .comparison-intro { padding:6px 16px; gap:17px; }.comparison-intro h2 { font-size:1.05rem; margin:3px 0; }.comparison-intro p { font-size:.73rem; line-height:1.5; }.comparison-state-note { font-size:.65rem; }
+    .comparison-toolbar { padding:8px 0 5px; }.comparison-toolbar label { font-size:.65rem; gap:3px; }.comparison-toolbar select { font-size:.75rem; }
+    .comparison-reading-note { font-size:.69rem; padding-bottom:7px; }
+    .comparison-list { display:flex; flex-direction:column; gap:8px; }
+    .probability-card { display:grid; grid-template-columns:minmax(150px,.95fr) minmax(0,2.4fr) 142px; align-items:center; gap:6px 17px; padding:10px 14px; border-radius:13px; }
+    .probability-card-heading { flex-direction:column; align-items:start; gap:4px; }.probability-card-heading h3 { font-size:.85rem; margin-top:3px; }.probability-group { font-size:.56rem; }.probability-kind { font-size:.55rem; padding:3px 5px; }
+    .probability-numbers { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:17px; margin:0; }
+    .probability-percent strong { font-size:.86rem; line-height:1.5; }.probability-percent small { font-size:.56rem; }.probability-fraction strong { font-size:.72rem; line-height:1.5; }.probability-fraction > span:last-child { font-size:.6rem; }
+    .probability-context { margin:0; border:0; }.probability-context summary { font-size:.66rem; }.probability-context[open] { grid-column:1 / -1; border-top:1px solid #e2e7ef; }.probability-context[open] dl { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 22px; }
+}
+@media (max-width:1100px) {
+    .experiment-tab { gap:5px; padding:6px 5px; font-size:.77rem; }.experiment-tab small { display:none; }
+    .lotto-run-preview { font-size:.59rem; }.lotto-run-rate { font-size:.58rem; }.run-unit-choice,.lotto-speed { font-size:.66rem; gap:4px; }.run-unit-choice select,.lotto-speed select { font-size:.69rem; padding:5px 6px; }
+}
+@media (max-width:850px) {
+    .comparison-list { grid-template-columns:1fr; }.comparison-intro { align-items:start; flex-direction:column; gap:10px; padding:17px; }.comparison-state-note { text-align:left; }.comparison-state-note br { display:none; }.comparison-state-note br::after { content:" · "; }
+    .lotto-run-preview { font-size:.72rem; }.lotto-run-rate { font-size:.67rem; }.run-unit-choice,.lotto-speed { font-size:.75rem; }.run-unit-choice select,.lotto-speed select { font-size:.78rem; }
+}
+@media (max-width:600px) {
+    .experiment-tabs { grid-template-columns:repeat(3,minmax(0,1fr)); }.experiment-tab { min-height:68px; }
+    .comparison-heading { align-items:start; }.comparison-heading .mini-tag { white-space:normal; max-width:140px; }
+    .comparison-toolbar { gap:9px; }.comparison-toolbar label { flex:1 1 130px; }.comparison-toolbar select { min-width:0; width:100%; }.comparison-count { margin:0; }
+    .probability-card { padding:15px 14px 7px; }.probability-card-heading { flex-wrap:wrap; }.probability-card-heading h3 { font-size:.95rem; }.probability-percent strong { font-size:.9rem; }
+    .run-unit-choice,.lotto-speed { flex:1 1 140px; }.run-unit-choice select,.lotto-speed select { flex:1; min-width:0; max-width:none; }
+}
 .many-coins .coin { width:3.25rem; height:3.25rem; }
 /* 로또는 드문 당첨과 대부분의 낙첨을 여섯 행으로 함께 비교한다. */
 .lotto-dashboard + .distribution-panel .bar-list { max-height:none; overflow:visible; }
@@ -276,4 +339,7 @@ input:not([type=checkbox]):not([type=file]),select { min-height:44px; border-rad
     .lotto-dashboard + .distribution-panel .distribution-row { padding-top:1px; padding-bottom:1px; }
     .kind-lotto .stage-copy { margin-top:7px; }
     .kind-lotto .stage-bottom { margin-top:6px; }
+}
+@media (min-width:851px) and (max-width:1050px) {
+    .kind-lotto .lotto-draw { height:67px; }
 }

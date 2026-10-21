@@ -1,17 +1,17 @@
 self.assetsManifest = {
-  "version": "D7kvFZFn",
+  "version": "1Nz6Fak8",
   "assets": [
     {
       "hash": "sha256-Fe7WsJRdsFcJiRqXL1EfzIyG2D2M51PX5xAih5l0sxQ=",
       "url": "ChanceLab.styles.css"
     },
     {
-      "hash": "sha256-EYlW2puBzBMYq7ojY1OSm1PazW8f0fMUTnXO17WGirU=",
-      "url": "_framework/ChanceLab.Core.h4v629en4k.wasm"
+      "hash": "sha256-iQvZrsykfjzY6oXJFHoMDm8KJDSl16dQ3znq2aXZaHY=",
+      "url": "_framework/ChanceLab.Core.rr9818l8ob.wasm"
     },
     {
-      "hash": "sha256-dfyNR40yqpCE/UG0D35Sa1PUPc0PVB/xRXA9d9tCMgU=",
-      "url": "_framework/ChanceLab.vbegb737p6.wasm"
+      "hash": "sha256-gpUsLQQ6WoCVh0aAWcvLPtO39GQdNEc1/vjVzcH6sdc=",
+      "url": "_framework/ChanceLab.eot9gvcbz1.wasm"
     },
     {
       "hash": "sha256-pm4jZqWGECl/IROQyH3Vswmp3zSxdM9yTrBwiRD7D5I=",
@@ -22,8 +22,8 @@ self.assetsManifest = {
       "url": "_framework/Microsoft.AspNetCore.Components.WebAssembly.fomwnlj3lv.wasm"
     },
     {
-      "hash": "sha256-3s/2MMCSlmuCD1x1HO+uhfs+ZYJ4SRpWxcT6o8b31Rc=",
-      "url": "_framework/Microsoft.AspNetCore.Components.edkwdd4txo.wasm"
+      "hash": "sha256-ETc9wSoXXE3w8toQXgj/PMFXdI7TMpI5T1Pj7uwSyv0=",
+      "url": "_framework/Microsoft.AspNetCore.Components.blr1jpt74l.wasm"
     },
     {
       "hash": "sha256-oDcpyYbqdkq6hP6NijTRWyXx2c2DKL6qilKSIzNmK3I=",
@@ -98,8 +98,8 @@ self.assetsManifest = {
       "url": "_framework/System.IO.Pipelines.px0vglstfo.wasm"
     },
     {
-      "hash": "sha256-HDFo0/S/GRdHgAvzmvtWdxgXGicw0r1p7oiOY1cAw7M=",
-      "url": "_framework/System.Linq.4a7tbrvt2y.wasm"
+      "hash": "sha256-j9Aij65RITIoSJqZ78NPlTHWqkolvQyZ1ZqUXvctAnY=",
+      "url": "_framework/System.Linq.rh9edn4uvk.wasm"
     },
     {
       "hash": "sha256-KDQtyf2uSIHxK8sgOf992nt9vqa2UyzPa2VurTjqzH4=",
@@ -114,8 +114,8 @@ self.assetsManifest = {
       "url": "_framework/System.Net.Primitives.co0m2kto8v.wasm"
     },
     {
-      "hash": "sha256-5KA8bydo2lXXvz1phJ5pqH/fvPKwY5KhRfnFbdPqfsY=",
-      "url": "_framework/System.Private.CoreLib.k2ky1thiox.wasm"
+      "hash": "sha256-pOoYLpn+IqooIi0mtNPhsV8myCz01vtzRneGM60FXZU=",
+      "url": "_framework/System.Private.CoreLib.01ga7hj8hq.wasm"
     },
     {
       "hash": "sha256-SnGbLyMJGg9JL3ho4w7p9p4lxksmttRAtr00QwWiWPQ=",
@@ -126,8 +126,12 @@ self.assetsManifest = {
       "url": "_framework/System.Runtime.InteropServices.JavaScript.d22d4fjl8h.wasm"
     },
     {
-      "hash": "sha256-DM7OvUWHDinLY2oxT/JUdI4bqI8HvKTwepMEHhSVk9s=",
-      "url": "_framework/System.Runtime.of8hx3safh.wasm"
+      "hash": "sha256-M2JehSADnaH0wIW4GLxuewFMOiDySeSjzesltng/QZ8=",
+      "url": "_framework/System.Runtime.Numerics.xf9kddnlei.wasm"
+    },
+    {
+      "hash": "sha256-m99wv3fPRnRK2kFRjVGuYKMsHXGqkw7eGusMJYpBCOY=",
+      "url": "_framework/System.Runtime.v741g9kcah.wasm"
     },
     {
       "hash": "sha256-EQTc6Pe2UvKHjG5ttictXTI7JL/zILpIGlVU+Ek3usg=",
@@ -154,8 +158,8 @@ self.assetsManifest = {
       "url": "_framework/blazor.webassembly.w3qd1tpl0e.js"
     },
     {
-      "hash": "sha256-5FLi8Kj32MFceRwGI5vUKnEZx9DTtNRNPj6jnGTSxfs=",
-      "url": "_framework/dotnet.cuyer4elza.js"
+      "hash": "sha256-MFtFSUXTZDdMaLpz8YTSKxd0ehr05OXrjnopRZKYels=",
+      "url": "_framework/dotnet.0wze2n3qjc.js"
     },
     {
       "hash": "sha256-jZddobLBM2C3lQhYQ61xSQJ/WqD3eQCO3RzoHGaOjx0=",
@@ -182,11 +186,11 @@ self.assetsManifest = {
       "url": "_framework/icudt_no_CJK.lfu7j35m59.dat"
     },
     {
-      "hash": "sha256-aTPynjTfgXawk5OQZVfdJxDHqOLCL0h1XDgXxR+34Og=",
+      "hash": "sha256-UnfwO8o8H7Wrc20fmqf0nMkU4YW369C9BbzJB9a/+Ks=",
       "url": "app-version.json"
     },
     {
-      "hash": "sha256-aqjqaq9YkXU2MUxtynAWH1OJmfvGkb7yVVOP/MSW0ik=",
+      "hash": "sha256-+6Yy+S6bovZLrkTLnC+wxoX4FDrymYQgP/gU5Ec8qhg=",
       "url": "css/app.css"
     },
     {
@@ -206,15 +210,15 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-wgR+5uLNUC4OYQz26JuIByJJbfLkzXmZnUM07xef9XA=",
+      "hash": "sha256-ZqmsRmYgUFqouH1wDzOYnbGq4KCIHWc5ohlQzAfZD6E=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-HhCaqONNm0pDTWZaOXnL7saarli6na3Fq8gQOac+m/s=",
+      "hash": "sha256-3Ai+A+DjyBfI745b3rITPWrGUKsdD2NjoX4tZIVCdUw=",
       "url": "js/chanceLab.js"
     },
     {
-      "hash": "sha256-k7EznFPNS6Q7bCo+59V8YEcdvigJhUifTRImixN7zYI=",
+      "hash": "sha256-jX2EK3pf/c9EkR9o4MINa3xbtuER1/fRzWEKs4Z6TCE=",
       "url": "manifest.webmanifest"
     }
   ]
