@@ -41,7 +41,7 @@ svg { display:block; }
 .file-button input { position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:pointer; }
 .file-button:focus-within { outline:3px solid var(--purple); }
 .danger-text { color:#a72c3c; }
-.experiment-tabs { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); padding:5px; gap:5px; border:1px solid var(--line); border-radius:18px; background:#fff; box-shadow:0 4px 14px #1b2b4b04; }
+.experiment-tabs { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); padding:5px; gap:5px; border:1px solid var(--line); border-radius:18px; background:#fff; box-shadow:0 4px 14px #1b2b4b04; }
 .experiment-tab { display:flex; gap:9px; align-items:center; justify-content:center; min-height:48px; padding:6px 10px; background:transparent; border:1px solid transparent; border-radius:13px; font-weight:800; font-size:.9rem; }
 .experiment-tab small { font-size:.58rem; letter-spacing:.07em; font-weight:750; color:var(--muted); }
 .experiment-tab.active { background:#ece8fd; border-color:#c6baee; color:#513492; }
@@ -271,6 +271,11 @@ input:not([type=checkbox]):not([type=file]),select { min-height:44px; border-rad
 /* 비교 화면과 기간 입력은 실험 집계를 바꾸지 않는 표시·실행 계획이다. */
 .experiment-tab > span:not(.tab-icon) { min-width:0; overflow-wrap:anywhere; }
 .tab-icon.comparison { background:#e1f2f3; color:#176976; }
+.tab-icon.textbook { background:#fff1dc; color:#88520d; }
+/* 일곱 탭을 추가해도 iPad 가로의 무대 높이와 44px 조작 영역을 유지한다. */
+@media (min-width:851px) and (max-width:1420px) {
+    .experiment-tab { gap:6px; padding:6px 4px; font-size:.8rem; }.experiment-tab small { display:none; }
+}
 .run-unit-choice,.lotto-speed { display:flex; align-items:center; gap:7px; color:var(--muted); font-size:.72rem; font-weight:750; min-width:0; }
 .run-unit-choice > span,.lotto-speed > span,.custom-count > span { white-space:nowrap; flex-shrink:0; }
 .lotto-console .custom-count { min-width:88px; }.lotto-console .custom-count input { min-width:44px; }
