@@ -4,7 +4,7 @@ let sequence = 0;
 export function watchVisibility(dotnet) {
     const id = `textbook-${++sequence}`;
     const listener = () => {
-        if (document.hidden) dotnet.invokeMethodAsync("PauseForVisibility").catch(() => {});
+        dotnet.invokeMethodAsync(document.hidden ? "PauseForVisibility" : "ResumeVisualsForVisibility").catch(() => {});
     };
     document.addEventListener("visibilitychange", listener);
     listeners.set(id, listener);
