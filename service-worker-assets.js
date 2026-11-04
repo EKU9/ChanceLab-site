@@ -1,17 +1,17 @@
 self.assetsManifest = {
-  "version": "U6ctL1Q6",
+  "version": "H+0F3nAi",
   "assets": [
     {
-      "hash": "sha256-CBArnmpIZWTkMfejHP6rPOK17wDSEY53Q9L5znNDuqU=",
+      "hash": "sha256-Mu6RDM827LTk7P9UTgvFg58xdPUZEnJq7fj+RkiMIJk=",
       "url": "ChanceLab.styles.css"
     },
     {
-      "hash": "sha256-Lejxj4/rM1UnaNAz9wZFsZ8oKE5IlYTFxsHgl3cQGZw=",
-      "url": "_framework/ChanceLab.Core.5ia0fpgp6f.wasm"
+      "hash": "sha256-S4RQ4jO+hz/yA5q0P0RECIf7Y5sdR9ddWUTcvVOSMB8=",
+      "url": "_framework/ChanceLab.154f1ytq6d.wasm"
     },
     {
-      "hash": "sha256-Pz6uNobOCeO6zgWjOu2RPPvsA7oGnrtwIRsm5T2we7g=",
-      "url": "_framework/ChanceLab.hku8htbuio.wasm"
+      "hash": "sha256-/OOxjhfsfPkTQjQ5CIiyaUuSavKjAYotqdIbuZeFozM=",
+      "url": "_framework/ChanceLab.Core.cohiq4hn8g.wasm"
     },
     {
       "hash": "sha256-PRKNW1p5nUZ2Tu0cjG0bgKRfWRUSq3V9pJREGNprm8s=",
@@ -114,8 +114,8 @@ self.assetsManifest = {
       "url": "_framework/System.Net.Primitives.co0m2kto8v.wasm"
     },
     {
-      "hash": "sha256-GD8/mM23saK4oKhSbP7MLZKEcZMg+zCEmtbTBz0rw/M=",
-      "url": "_framework/System.Private.CoreLib.cvg66ga68l.wasm"
+      "hash": "sha256-FlGcT625DQ4nCwmKsnrL5d1e5D4+4m3ItKtQ+QviWQY=",
+      "url": "_framework/System.Private.CoreLib.uapwdbtk96.wasm"
     },
     {
       "hash": "sha256-SnGbLyMJGg9JL3ho4w7p9p4lxksmttRAtr00QwWiWPQ=",
@@ -130,8 +130,8 @@ self.assetsManifest = {
       "url": "_framework/System.Runtime.Numerics.c4wimcr0iu.wasm"
     },
     {
-      "hash": "sha256-GES62RF3yHnPEBAFEHML6KG040RkDDJRZBC5+sTTUSY=",
-      "url": "_framework/System.Runtime.cniy59wlcx.wasm"
+      "hash": "sha256-Lu5n+80VvvRTYAqxq1oICS9aoY/RMTq/2xpwS7viZIs=",
+      "url": "_framework/System.Runtime.mafr84pp4v.wasm"
     },
     {
       "hash": "sha256-EQTc6Pe2UvKHjG5ttictXTI7JL/zILpIGlVU+Ek3usg=",
@@ -146,8 +146,8 @@ self.assetsManifest = {
       "url": "_framework/System.Text.Json.rz2mfzqkt9.wasm"
     },
     {
-      "hash": "sha256-JDBI+Y+7o/5Aco6ZpCy/VpV3Hw/s+EymC6pjVxpMHuc=",
-      "url": "_framework/System.Text.RegularExpressions.gt8ijk3pmi.wasm"
+      "hash": "sha256-OKE2Sgw82fzvE6dQB4kklc9eCMy/riK/hV24jT+LXnc=",
+      "url": "_framework/System.Text.RegularExpressions.svlkf1q4fc.wasm"
     },
     {
       "hash": "sha256-JLkUEBAvIEuIOMDryzhL19MVrwvIrVBTbHN7z8C4jmA=",
@@ -156,6 +156,10 @@ self.assetsManifest = {
     {
       "hash": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
       "url": "_framework/blazor.webassembly.w3qd1tpl0e.js"
+    },
+    {
+      "hash": "sha256-vN6hi8zJAbZahI/O0c5pzEvORzEgWzmTPHNdi2m3acY=",
+      "url": "_framework/dotnet.k2aj93tzy5.js"
     },
     {
       "hash": "sha256-jZddobLBM2C3lQhYQ61xSQJ/WqD3eQCO3RzoHGaOjx0=",
@@ -170,10 +174,6 @@ self.assetsManifest = {
       "url": "_framework/dotnet.runtime.v06hirbjsv.js"
     },
     {
-      "hash": "sha256-0pidteUSlAgpFdgV24ivddGXyv+xh6v5O2WHJEL3pSw=",
-      "url": "_framework/dotnet.y0vnw3lhm1.js"
-    },
-    {
       "hash": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
       "url": "_framework/icudt_CJK.tjcz0u77k5.dat"
     },
@@ -186,11 +186,11 @@ self.assetsManifest = {
       "url": "_framework/icudt_no_CJK.lfu7j35m59.dat"
     },
     {
-      "hash": "sha256-xYr1EEo82SsEGx8KRwONfH2K/FJ2N6P3b55snxftziM=",
+      "hash": "sha256-bHugVHxr6daSIRe2V33Y8r45Vliu8VNW0TRpovkfCHM=",
       "url": "app-version.json"
     },
     {
-      "hash": "sha256-IahdcZbSUlcwl2WGS5P3gMaTsn98uvAgFFV0Oi3rxmQ=",
+      "hash": "sha256-1+B+gSsDDTcm9NSUd6eJcppyuCHNadtoersYw4Ms42k=",
       "url": "css/app.css"
     },
     {
@@ -214,7 +214,7 @@ self.assetsManifest = {
       "url": "images/textbook/food-atlas.png"
     },
     {
-      "hash": "sha256-TX+rrDL45XZ6yNvwrLoXC0xYqKifYKySlHg52yu4P8o=",
+      "hash": "sha256-q/IFz8wSLBQn+rHMXbKNuLgQ3zom4IJShTOXf5LBOB0=",
       "url": "index.html"
     },
     {
@@ -222,7 +222,7 @@ self.assetsManifest = {
       "url": "js/chanceLab.js"
     },
     {
-      "hash": "sha256-2k2ZvXqnG6+Tff6GQpWGzrneFBQh4RfxYNTt6bjWH74=",
+      "hash": "sha256-BYZrZaWouYyRvytq8WWwNrKnPdfff6kdDIO3DSf1RY8=",
       "url": "js/textbook.js"
     },
     {
