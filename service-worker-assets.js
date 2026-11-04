@@ -1,17 +1,17 @@
 self.assetsManifest = {
-  "version": "H+0F3nAi",
+  "version": "s62l91mT",
   "assets": [
     {
-      "hash": "sha256-Mu6RDM827LTk7P9UTgvFg58xdPUZEnJq7fj+RkiMIJk=",
+      "hash": "sha256-9wWn2MXwyHD4aUxOK39TIfoy4IIEERazb3b+WwyDgWM=",
       "url": "ChanceLab.styles.css"
     },
     {
-      "hash": "sha256-S4RQ4jO+hz/yA5q0P0RECIf7Y5sdR9ddWUTcvVOSMB8=",
-      "url": "_framework/ChanceLab.154f1ytq6d.wasm"
+      "hash": "sha256-xtLb8tAQRP8pKxhsk+g26AJr2E6Nmpakh5qquly3dps=",
+      "url": "_framework/ChanceLab.21mtq5b6cw.wasm"
     },
     {
-      "hash": "sha256-/OOxjhfsfPkTQjQ5CIiyaUuSavKjAYotqdIbuZeFozM=",
-      "url": "_framework/ChanceLab.Core.cohiq4hn8g.wasm"
+      "hash": "sha256-WWLatMZvyBYDuz7PFCKvgWmfZyypbtaWHUOr+2Vn3V0=",
+      "url": "_framework/ChanceLab.Core.xy31o47ur6.wasm"
     },
     {
       "hash": "sha256-PRKNW1p5nUZ2Tu0cjG0bgKRfWRUSq3V9pJREGNprm8s=",
@@ -158,8 +158,8 @@ self.assetsManifest = {
       "url": "_framework/blazor.webassembly.w3qd1tpl0e.js"
     },
     {
-      "hash": "sha256-vN6hi8zJAbZahI/O0c5pzEvORzEgWzmTPHNdi2m3acY=",
-      "url": "_framework/dotnet.k2aj93tzy5.js"
+      "hash": "sha256-/lgOGcpWdyYntLFiLqkGGPgAxaJze5eD751KDQpqlE8=",
+      "url": "_framework/dotnet.adyso9iz5b.js"
     },
     {
       "hash": "sha256-jZddobLBM2C3lQhYQ61xSQJ/WqD3eQCO3RzoHGaOjx0=",
@@ -186,7 +186,7 @@ self.assetsManifest = {
       "url": "_framework/icudt_no_CJK.lfu7j35m59.dat"
     },
     {
-      "hash": "sha256-bHugVHxr6daSIRe2V33Y8r45Vliu8VNW0TRpovkfCHM=",
+      "hash": "sha256-n0hA7rJdkZt88Vf/8Ii29oc3e7y9lXoucQslvIhIVPU=",
       "url": "app-version.json"
     },
     {
@@ -214,7 +214,7 @@ self.assetsManifest = {
       "url": "images/textbook/food-atlas.png"
     },
     {
-      "hash": "sha256-q/IFz8wSLBQn+rHMXbKNuLgQ3zom4IJShTOXf5LBOB0=",
+      "hash": "sha256-Ost7XtCgdZEWh8NMEpYTyd4bpo46vxsKhtVff6dXY0g=",
       "url": "index.html"
     },
     {
