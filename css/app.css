@@ -41,9 +41,9 @@ svg { display:block; }
 .file-button input { position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:pointer; }
 .file-button:focus-within { outline:3px solid var(--purple); }
 .danger-text { color:#a72c3c; }
-.experiment-tabs { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); padding:5px; gap:5px; border:1px solid var(--line); border-radius:18px; background:#fff; box-shadow:0 4px 14px #1b2b4b04; }
+.experiment-tabs { display:grid; grid-template-columns:repeat(8,minmax(0,1fr)); padding:5px; gap:5px; border:1px solid var(--line); border-radius:18px; background:#fff; box-shadow:0 4px 14px #1b2b4b04; }
 .experiment-tab { display:flex; gap:9px; align-items:center; justify-content:center; min-height:48px; padding:6px 10px; background:transparent; border:1px solid transparent; border-radius:13px; font-weight:800; font-size:.9rem; }
-.experiment-tab small { font-size:.58rem; letter-spacing:.07em; font-weight:750; color:var(--muted); }
+.experiment-tab small { display:none; font-size:.58rem; letter-spacing:.07em; font-weight:750; color:var(--muted); }
 .experiment-tab.active { background:#ece8fd; border-color:#c6baee; color:#513492; }
 .experiment-tab.active small { color:#624497; }
 .experiment-tab:hover { background:#f0eef9; }
@@ -346,3 +346,7 @@ input:not([type=checkbox]):not([type=file]),select { min-height:44px; border-rad
 @media (min-width:851px) and (max-width:1050px) {
     .kind-lotto .lotto-draw { height:67px; }
 }
+/* 여덟 탭도 글자를 줄이지 않고 누를 수 있도록 좁은 화면에서는 두 줄로 배치한다. */
+.tab-icon.montyhall { background:#e3f3ec; color:#11685e; }
+@media (min-width:601px) and (max-width:900px) { .experiment-tabs { grid-template-columns:repeat(4,minmax(0,1fr)); }.experiment-tab { flex-direction:row; min-height:48px; font-size:.8rem; padding:6px; } }
+@media (max-width:440px) { .experiment-tabs { grid-template-columns:repeat(2,minmax(0,1fr)); }.experiment-tab { flex-direction:row; min-height:48px; font-size:.78rem; padding:6px; } }

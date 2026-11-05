@@ -1,4 +1,4 @@
-/* Manifest version: q1Z1od69 */
+/* Manifest version: jsTXoAbn */
 // 게시 산출물은 먼저 모두 저장하고, 사용자가 승인한 버전만 시작 화면으로 제공한다.
 self.importScripts('./service-worker-assets.js');
 const releaseKey = self.assetsManifest.version;
