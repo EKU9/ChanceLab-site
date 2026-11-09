@@ -1,17 +1,17 @@
 self.assetsManifest = {
-  "version": "jsTXoAbn",
+  "version": "7LAAPB8D",
   "assets": [
     {
-      "hash": "sha256-1f7W+nNd+Ze0i9png7EFKht1fPqDnqfh8N4rOrDleMw=",
+      "hash": "sha256-2ZR8wLdylQK6hXlvKkYKP9f0vZDHHnPr1Gl01V281mo=",
       "url": "ChanceLab.styles.css"
     },
     {
-      "hash": "sha256-UhH0X3BtdgukCPSnCLUYn3TDSB0cRVd2RJg3Xqxg5bk=",
-      "url": "_framework/ChanceLab.Core.i7im1mritx.wasm"
+      "hash": "sha256-F5aOx7mtl89uWqWPekWIaVbZasMlctcguqBTAXOldW8=",
+      "url": "_framework/ChanceLab.Core.z1h3h3gyn7.wasm"
     },
     {
-      "hash": "sha256-wvvs8YwUcqWktQyOEOVYwIomEk2mxeuaAFLSomGrsnA=",
-      "url": "_framework/ChanceLab.u0mrolxbn5.wasm"
+      "hash": "sha256-DierGbn/Ybp/naHOc/PAnx2ZjJZt4TrdFSgUzhzD75w=",
+      "url": "_framework/ChanceLab.mmq5tdklpt.wasm"
     },
     {
       "hash": "sha256-pm4jZqWGECl/IROQyH3Vswmp3zSxdM9yTrBwiRD7D5I=",
@@ -22,8 +22,8 @@ self.assetsManifest = {
       "url": "_framework/Microsoft.AspNetCore.Components.WebAssembly.vxnj5xu30w.wasm"
     },
     {
-      "hash": "sha256-14nXDofCt2Q/nmryXO1OIgslpadsR0kLdPuvIhoA2NY=",
-      "url": "_framework/Microsoft.AspNetCore.Components.bjqm6dwxvj.wasm"
+      "hash": "sha256-VaaX+vKn9bxk93IWvgzSrvrR6I9wXhgTvzlmJGi8e1Y=",
+      "url": "_framework/Microsoft.AspNetCore.Components.dykdz2rs63.wasm"
     },
     {
       "hash": "sha256-oDcpyYbqdkq6hP6NijTRWyXx2c2DKL6qilKSIzNmK3I=",
@@ -158,16 +158,16 @@ self.assetsManifest = {
       "url": "_framework/blazor.webassembly.w3qd1tpl0e.js"
     },
     {
+      "hash": "sha256-/CUY1zr2/Lr+eioYOh+iiQxm8Wj2OdTCSwKrmiQ/VFA=",
+      "url": "_framework/dotnet.g1tgvpeuhi.js"
+    },
+    {
       "hash": "sha256-jZddobLBM2C3lQhYQ61xSQJ/WqD3eQCO3RzoHGaOjx0=",
       "url": "_framework/dotnet.native.b6l13xorvf.js"
     },
     {
       "hash": "sha256-JTxXd17wbrHKV/375moHFUFc3a/ofVTPPqSTk6KwNj0=",
       "url": "_framework/dotnet.native.rw4kynp763.wasm"
-    },
-    {
-      "hash": "sha256-F1kXgVMyOllozCS+XyAmlUnTxjdLu6CgnoQSyyv1NZc=",
-      "url": "_framework/dotnet.r35h9rnzg2.js"
     },
     {
       "hash": "sha256-QbnqrZGHtGq7wudS17/AYEPpH9JkphrsyVllD6JHmds=",
@@ -186,7 +186,7 @@ self.assetsManifest = {
       "url": "_framework/icudt_no_CJK.lfu7j35m59.dat"
     },
     {
-      "hash": "sha256-5d2qVikNl28VOQ0yO51RNicHDPiTUEHghUKr9JqNMS4=",
+      "hash": "sha256-R3ZUgBE58X0Y1k8gDNhZ1yoOuh4Bra3NbfHdRlkHd8o=",
       "url": "app-version.json"
     },
     {
@@ -214,7 +214,7 @@ self.assetsManifest = {
       "url": "images/textbook/food-atlas.png"
     },
     {
-      "hash": "sha256-H4dSkOur0sT81DjZie0USlZFdDJDmVIRxht/JwBaAPs=",
+      "hash": "sha256-fBEG2UqtsdyxWffCHbDc2GAnz0UtZminrXnvND1mu10=",
       "url": "index.html"
     },
     {
