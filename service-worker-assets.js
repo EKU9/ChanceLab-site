@@ -1,17 +1,21 @@
 self.assetsManifest = {
-  "version": "DadUxjbP",
+  "version": "5cc4cb2103213dfd735dfcdcfaa16f6cb3c00e1da3e5eacde4e4a5979ab0e9eb",
   "assets": [
+    {
+      "url": "ChanceLab.styles.93f894da13fc.css",
+      "hash": "sha256-k/iU2hP8zOx+jk2LoFjK2Y4Ua6bvlLg4Ajqn+Iy4KsQ="
+    },
     {
       "hash": "sha256-k/iU2hP8zOx+jk2LoFjK2Y4Ua6bvlLg4Ajqn+Iy4KsQ=",
       "url": "ChanceLab.styles.css"
     },
     {
-      "hash": "sha256-KTJtTpVluTslmIadvmpp29bJSLlSYs/q/KVyElvNHLU=",
-      "url": "_framework/ChanceLab.Core.592rmeysuh.wasm"
+      "hash": "sha256-YoYPMEfR01BXXC0Poq783L/J6Y54MBkA9AVZ/uVcOC0=",
+      "url": "_framework/ChanceLab.24plornd6w.wasm"
     },
     {
-      "hash": "sha256-4vIxtsI5iABb46DQKoyP43ja+h73DOZCSp0rhxRQQeM=",
-      "url": "_framework/ChanceLab.mrspda4j5y.wasm"
+      "hash": "sha256-jrXexSZ/rnVLsfymIk3gpf79+CWipuiGcRL/yJzdxbI=",
+      "url": "_framework/ChanceLab.Core.axijjvww6k.wasm"
     },
     {
       "hash": "sha256-Jx5y6ojurD6tryHCfoN+TggLvB/j3uWBr54kHe/SnRk=",
@@ -158,8 +162,8 @@ self.assetsManifest = {
       "url": "_framework/blazor.webassembly.w3qd1tpl0e.js"
     },
     {
-      "hash": "sha256-M6seeepiIQiW/gcAn8xfUg83mThfbh+X6vd4VPGR3nU=",
-      "url": "_framework/dotnet.5iozq17qf2.js"
+      "hash": "sha256-2GZwQQSJIMHfKNliAR56mYQINCnt1RE0Y0Tzbp/3jv0=",
+      "url": "_framework/dotnet.cjbj8s6qql.js"
     },
     {
       "hash": "sha256-jZddobLBM2C3lQhYQ61xSQJ/WqD3eQCO3RzoHGaOjx0=",
@@ -186,8 +190,12 @@ self.assetsManifest = {
       "url": "_framework/icudt_no_CJK.lfu7j35m59.dat"
     },
     {
-      "hash": "sha256-KxJh1bWR+PwSdCc5sAfhTKoJL0HGCCmCalAWCVFq62c=",
+      "hash": "sha256-kPN9ztxcq3nwzTLbhoQHSuN60FVjSPNGuJrIBz6QzEs=",
       "url": "app-version.json"
+    },
+    {
+      "url": "css/app.ba5c0d5b8195.css",
+      "hash": "sha256-ulwNW4GV9dMNTok6qH9dWiY3/WASw9+K/OQRrWZcrS8="
     },
     {
       "hash": "sha256-ulwNW4GV9dMNTok6qH9dWiY3/WASw9+K/OQRrWZcrS8=",
@@ -214,16 +222,28 @@ self.assetsManifest = {
       "url": "images/textbook/food-atlas.png"
     },
     {
-      "hash": "sha256-X6WpT/a1fR7nyHEMvMibGrzoWPXdMeXimnsubE2VRUo=",
+      "hash": "sha256-4nJrqqItgBncmGuRGor7DhKUgcwm/LZ9wVQp0nbS5SY=",
       "url": "index.html"
+    },
+    {
+      "url": "js/chanceLab.dc08be03e0e3.js",
+      "hash": "sha256-3Ai+A+DjyBfI745b3rITPWrGUKsdD2NjoX4tZIVCdUw="
     },
     {
       "hash": "sha256-3Ai+A+DjyBfI745b3rITPWrGUKsdD2NjoX4tZIVCdUw=",
       "url": "js/chanceLab.js"
     },
     {
-      "hash": "sha256-eKl2x1fYbAtZf5DWcOXP4Wtxu191Uxft6HhR0QoAUc4=",
+      "url": "js/montyHall.10d8effa65f4.js",
+      "hash": "sha256-ENjv+mX0clDFkT7WhXL+33HbA3bMRgsoMxOQcpEgoXw="
+    },
+    {
+      "hash": "sha256-ENjv+mX0clDFkT7WhXL+33HbA3bMRgsoMxOQcpEgoXw=",
       "url": "js/montyHall.js"
+    },
+    {
+      "url": "js/textbook.05866b65a5a8.js",
+      "hash": "sha256-BYZrZaWouYyRvytq8WWwNrKnPdfff6kdDIO3DSf1RY8="
     },
     {
       "hash": "sha256-BYZrZaWouYyRvytq8WWwNrKnPdfff6kdDIO3DSf1RY8=",

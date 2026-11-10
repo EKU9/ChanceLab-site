@@ -6,6 +6,12 @@ export function watchEnvironment(dotnet, root) {
     const motion = matchMedia('(prefers-reduced-motion: reduce)');
     const update = () => dotnet.invokeMethodAsync('MontyEnvironmentChanged', motion.matches, document.hidden).catch(() => {});
     const watcher = { motion, update, root, expanded: false, scroll: 0, overflow: '', focus: null };
+    // 이전 버전의 열린 읽기 전용 창은 확대 루트 인자 없이 환경 구독만 요청한다.
+    if (!root) {
+        document.addEventListener('visibilitychange',update);
+        motion.addEventListener('change',update);
+        watchers.set(id,watcher);update();return id;
+    }
     const fullscreenElement = () => document.fullscreenElement || document.webkitFullscreenElement;
     const fullscreenChanged = () => dotnet.invokeMethodAsync('MontyFullscreenChanged', fullscreenElement() === root, null).catch(() => {});
     const fullscreenClick = async event => {
@@ -52,7 +58,7 @@ async function leaveFullscreen(root) {
 
 export async function setExpanded(id, expanded) {
     const watcher = watchers.get(id);
-    if (!watcher || watcher.expanded === expanded) return;
+    if (!watcher || !watcher.root || watcher.expanded === expanded) return;
     watcher.expanded = expanded;
     if (expanded) {
         watcher.scroll = window.scrollY;
@@ -77,10 +83,12 @@ export function unwatchEnvironment(id) {
     if (!watcher) return;
     document.removeEventListener('visibilitychange', watcher.update);
     watcher.motion.removeEventListener('change', watcher.update);
-    document.removeEventListener('fullscreenchange', watcher.fullscreenChanged);
-    document.removeEventListener('webkitfullscreenchange', watcher.fullscreenChanged);
-    watcher.root.removeEventListener('click', watcher.fullscreenClick);
-    document.removeEventListener('keydown', watcher.keydown, true);
+    if (watcher.root) {
+        document.removeEventListener('fullscreenchange', watcher.fullscreenChanged);
+        document.removeEventListener('webkitfullscreenchange', watcher.fullscreenChanged);
+        watcher.root.removeEventListener('click', watcher.fullscreenClick);
+        document.removeEventListener('keydown', watcher.keydown, true);
+    }
     if (watcher.expanded) {
         document.body.style.overflow = watcher.overflow;
         void leaveFullscreen(watcher.root);

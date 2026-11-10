@@ -1,4 +1,4 @@
-/* Manifest version: DadUxjbP */
+/* Manifest version: pqopfL/v */
 // 게시 산출물은 먼저 모두 저장하고, 사용자가 승인한 버전만 시작 화면으로 제공한다.
 self.importScripts('./service-worker-assets.js');
 const releaseKey = self.assetsManifest.version;
@@ -141,7 +141,11 @@ self.addEventListener('fetch', event => {
                 if (response) return response;
             }
             // 구버전 창은 내용 해시가 있는 런타임 파일만 다른 캐시에서 읽는다.
-            const fingerprinted = path.startsWith(new URL('_framework/', self.registration.scope).pathname) && /\.[a-z0-9_-]{8,}\.(js|wasm|dll|dat|pdb|json)(\.(br|gz))?$/i.test(path);
+            const frameworkFingerprint = path.startsWith(new URL('_framework/', self.registration.scope).pathname) && /\.[a-z0-9_-]{8,}\.(js|wasm|dll|dat|pdb|json)(\.(br|gz))?$/i.test(path);
+            const localPath = path.slice(new URL(self.registration.scope).pathname.length);
+            // 이전 창의 지문 모듈은 같은 내용 주소로만 되찾고 가변 파일은 대체하지 않는다.
+            const ownFingerprint = /^(?:(?:css\/app|ChanceLab\.styles)\.[a-f0-9]{12}\.css|js\/(?:chanceLab|montyHall|textbook)\.[a-f0-9]{12}\.js)$/.test(localPath);
+            const fingerprinted = frameworkFingerprint || ownFingerprint;
             if (event.request.mode !== 'navigate' && fingerprinted) {
                 for (const name of await caches.keys()) {
                     if (!name.startsWith('chancelab-') || name === metaCacheName) continue;
@@ -167,3 +171,5 @@ self.addEventListener('message', event => {
         if (approved) await self.skipWaiting();
     })());
 });
+
+// ChanceLab finalized assets: 5cc4cb2103213dfd735dfcdcfaa16f6cb3c00e1da3e5eacde4e4a5979ab0e9eb
